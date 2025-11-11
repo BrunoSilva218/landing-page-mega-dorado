@@ -4,7 +4,7 @@
     --cor-marrom: #42372B;
     --cor-preto: #1D1813;
     --cor-fundo: #0E0B09;
-    --fonte-principal: 'Poppins', sans-serif;
+    --fonte-principal: 'Playfair Display', serif;
 }
 
 body {
@@ -56,6 +56,10 @@ nav a:hover {
     display: flex;
     justify-content: center;
     text-align: left;
+    border: 2px solid #855810;
+    padding: 10px;
+    margin: 14px;border-radius: 12px;
+
 
     
 }
@@ -178,7 +182,7 @@ nav a:hover {
 }
 
 .contato a:hover {
-    color: rgb(184, 172, 10);
+    color: rgb(190, 190, 190);
 }
 
 botoes-contato {
@@ -190,7 +194,7 @@ botoes-contato {
 }
 
 .botao-contato {
-  background-color: #ff0066;
+  background-color: #be0851a6;
   color: #fff;
   padding: 12px 20px;
   border-radius: 10px;
@@ -201,30 +205,31 @@ botoes-contato {
   align-items: center;
   gap: 8px;
   transition: all 0.3s ease; /* Transição suave */
-  box-shadow: 0 4px 10px rgba(255, 0, 102, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.404);
 }
 
 .botao-contato:hover {
   transform: translateY(-5px); /* movimento suave */
-  background-color: #ff3380;
-  box-shadow: 0 8px 20px rgba(255, 0, 128, 0.6);
+  background-color: #bd1e1e;
+  box-shadow: 0 8px 20px rgba(2, 2, 2, 0.562);
 }
 
 .botao-contato.whatsapp {
-  background-color: #25d365ce;
-  box-shadow: 0 4px 10px rgba(37, 211, 101, 0.226);
+  background-color: #08461fce;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.404);
 }
 
 .botao-contato.whatsapp:hover {
-  background-color: #1ebe5a;
+  background-color: #1ebe5b8a;
 }
 
 .botao-contato.salvar {
-  background-color: #007bff;
+  background-color: #04318b;
+  
 }
 
 .botao-contato.salvar:hover {
-  background-color: #0056d2;
+  background-color: #0058d29c;
 }
 
 /* Rodapé */
@@ -249,6 +254,7 @@ footer a:hover {
 @media (max-width: 768px) {
     header {
         flex-direction: column;
+
     }
 
     .itens-cardapio {
@@ -259,4 +265,11 @@ footer a:hover {
     display: flex;
     justify-content: center;
      }
+}
+
+@media (min-width: 769px) /* regras para telas grandes */{
+    .sobre {
+    font-size: 1em;
+    text-align: center;
+ }
 }
